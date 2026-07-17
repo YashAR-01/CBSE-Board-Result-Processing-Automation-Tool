@@ -45,6 +45,7 @@ Place these files in the same directory as the script before running:
 
 ## Known Limitations
   - The parsing logic is written for CBSE's current result text format — if CBSE changes the structure/layout of the raw data, the cleaning step will likely break and need to be updated
+  - Resets (`DROP DATABASE`) the database on every run — do not run against data you want to preserve without backing it up first
 
 ## Future Additions
 
