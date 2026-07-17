@@ -43,6 +43,9 @@ Place these files in the same directory as the script before running:
   - Subject-wise marks and grades
   - BEST_4 and ALL_SUB scores
 
+## Known Limitations
+  - The parsing logic is written for CBSE's current result text format — if CBSE changes the structure/layout of the raw data, the cleaning step will likely break and need to be updated
+
 ## Future Additions
 
 - Subject-wise pass percentage and distribution charts
