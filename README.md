@@ -53,4 +53,4 @@ Place these files in the same directory as the script before running:
 
 ## Note
 
-Change your credentials for mysql connector i.e host,username and password before running the programs
+Change your credentials for mysql connector in line 85 i.e host,username and password before running the programs
