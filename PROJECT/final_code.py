@@ -3,7 +3,7 @@ import os
 import csv
 
 # ---------------- STEP 1: READ AND CLEAN RAW DATA ----------------
-f = open("sample.txt", "r")
+f = open("sample_result.txt", "r")
 d = f.readlines()
 f.close()
 
@@ -255,7 +255,6 @@ def menu():
         except ValueError:
             print("❌ Invalid input. Try again.")
             continue
-        print(choice)
         if choice == 0:
             print("👋 Exiting...")
             break
@@ -270,8 +269,8 @@ def menu():
                 
 
         
-        elif 2 <= choice <= len(tables):
-            table_name = tables[choice - 1]
+        elif 2 <= choice <= len(tables)+3:
+            table_name = tables[choice-2]
             print(f"\n✅ Selected Table: {table_name}")
             print("\n🔽 Sorting Options:")
             print("1. Sort by BEST_4")
