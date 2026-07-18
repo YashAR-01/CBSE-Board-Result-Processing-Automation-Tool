@@ -84,6 +84,7 @@ with open("out.txt", "w") as f:
 # ---------------- STEP 4: MYSQL SETUP ----------------
 conn = mysql.connector.connect(host="HOST", user="YOUR USERNAME", password="YOUR PASSWORD")
 cursor = conn.cursor()
+cursor.execute("DROP DATABASE IF EXISTS result_boards")
 cursor.execute("CREATE DATABASE IF NOT EXISTS result_boards")
 cursor.execute("USE result_boards")
 
